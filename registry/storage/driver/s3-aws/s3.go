@@ -205,7 +205,7 @@ func FromParameters(ctx context.Context, parameters map[string]interface{}) (*Dr
 		regionEndpoint = ""
 	}
 
-	forcePathStyleBool := true
+	forcePathStyleBool := false
 	forcePathStyle := parameters["forcepathstyle"]
 	switch forcePathStyle := forcePathStyle.(type) {
 	case string:
